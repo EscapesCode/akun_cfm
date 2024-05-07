@@ -1,17 +1,25 @@
 proxies:
--   name: Sg Dua
-    server: unlimited.indo-ssh.com
+-   name: WS
+    server: cvs-deo.shopeemobile.com
     port: 443
-    type: vmess
-    uuid: f6508b43-7780-4726-a07e-d186b2826858
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: trojan
+    password: 86ece01c-b108-4352-bf90-c2457bb796b3
     skip-cert-verify: true
-    servername: xraysg1.baguno.my.id
+    sni: hayo.bogel-store.my.id
     network: ws
     ws-opts: 
-      path: /vmess
+      path: /trojan-ws
       headers: 
-        Host: xraysg1.baguno.my.id
+        Host: hayo.bogel-store.my.id
+    udp: true
+-   name: GRPC
+    server: cvs-deo.shopeemobile.com
+    port: 443
+    type: trojan
+    password: 86ece01c-b108-4352-bf90-c2457bb796b3
+    skip-cert-verify: true
+    sni: hayo.bogel-store.my.id
+    network: grpc
+    grpc-opts: 
+      grpc-service-name: trojan-grpc
     udp: true
