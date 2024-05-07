@@ -1,6 +1,6 @@
 proxies:
 -   name: Sg Dua
-    server: cvs-deo.shopeemobile.com
+    server: unlimited.indo-ssh.com
     port: 443
     type: vmess
     uuid: f6508b43-7780-4726-a07e-d186b2826858
