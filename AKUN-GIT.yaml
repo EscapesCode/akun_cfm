@@ -1,25 +1,17 @@
 proxies:
--   name: WS
-    server: cvs-deo.shopeemobile.com
-    port: 443
-    type: trojan
-    password: 86ece01c-b108-4352-bf90-c2457bb796b3
-    skip-cert-verify: true
-    sni: hayo.bogel-store.my.id
+-   name: fiqro
+    server: ava.game.naver.com
+    port: 80
+    type: vmess
+    uuid: 74116b53-5830-4b39-bfff-7d0817ec5fa1
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: 
     network: ws
     ws-opts: 
-      path: /trojan-ws
+      path: /vmess
       headers: 
-        Host: hayo.bogel-store.my.id
-    udp: true
--   name: GRPC
-    server: cvs-deo.shopeemobile.com
-    port: 443
-    type: trojan
-    password: 86ece01c-b108-4352-bf90-c2457bb796b3
-    skip-cert-verify: true
-    sni: hayo.bogel-store.my.id
-    network: grpc
-    grpc-opts: 
-      grpc-service-name: trojan-grpc
+        Host: good11.baguno.my.id
     udp: true
